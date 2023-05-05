@@ -4,9 +4,9 @@ namespace Liloi\Nexus\API\Map\Collection;
 
 use Liloi\API\Response;
 use Liloi\Nexus\API\Method as SuperMethod;
-use Liloi\Nexus\Engine\Domain\Map\Manager;
-use Liloi\Nexus\Engine\Domain\Map\Statuses;
-use Liloi\Nexus\Engine\Domain\Map\Types;
+use Liloi\Nexus\Engine\Domain\Items\Manager;
+use Liloi\Nexus\Engine\Domain\Items\Statuses;
+use Liloi\Nexus\Engine\Domain\Items\Types;
 
 /**
  * Rune API: Blueprint.Blueprints.Show

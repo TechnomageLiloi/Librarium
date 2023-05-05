@@ -23,7 +23,7 @@
                 </a>
             </h1>
             <hr/>
-            <?php echo $entity->parse(); ?>
+            <?php //echo $entity->parse(); ?>
         </div>
     <?php endforeach; ?>
 </div>
