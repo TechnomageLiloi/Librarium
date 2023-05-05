@@ -63,6 +63,18 @@ class Manager extends DomainManager
         return Entity::create($row);
     }
 
+    public static function loadByURL(string $URL): Entity
+    {
+        $name = self::getTableName();
+
+        $row = self::getAdapter()->getRow(sprintf(
+            'select * from %s where link="%s";',
+            $name, $URL
+        ));
+
+        return Entity::create($row);
+    }
+
     public static function save(Entity $entity): void
     {
         $name = self::getTableName();

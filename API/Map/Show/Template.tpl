@@ -6,12 +6,12 @@
 </style>
 <div id="map-show">
     <div class="title">
-        <h1><?php echo $entity->getTitle(); ?></h1>
+        <h1><?php echo $entity->getCaption(); ?></h1>
         <hr/>
-        <?php echo $entity->getDt(); ?> - <?php echo $entity->getTags(); ?>
+        <?php echo $entity->getTs(); ?> - <?php echo $entity->getTags(); ?>
         <hr/>
     </div>
-    <?php echo $entity->parse(); ?>
+    <?php echo $entity->parseProgram(); ?>
     <hr/>
     <ul>
     <?php foreach($items as $item): ?>

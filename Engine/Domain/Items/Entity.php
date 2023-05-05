@@ -3,6 +3,7 @@
 namespace Liloi\Nexus\Engine\Domain\Items;
 
 use Liloi\Tools\Entity as AbstractEntity;
+use Liloi\Stylo\Parser;
 
 /**
  * @method string getCaption()
@@ -52,5 +53,15 @@ class Entity extends AbstractEntity
     public function save(): void
     {
         Manager::save($this);
+    }
+
+    public function parseProgram(): string
+    {
+        return Parser::parseString($this->getProgram());
+    }
+
+    public function parseSummary(): string
+    {
+        return Parser::parseString($this->getSummary());
     }
 }

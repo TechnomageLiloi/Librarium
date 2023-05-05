@@ -18,12 +18,12 @@
     <?php foreach($collection as $key_area => $entity): ?>
         <div class="block-area">
             <h1 class="title">
-                <a href="<?php echo $entity->getKey(); ?>">
-                    <?php echo $entity->getTitle(); ?>
+                <a href="<?php echo $entity->getLink(); ?>">
+                    <?php echo $entity->getCaption(); ?>
                 </a>
             </h1>
             <hr/>
-            <?php //echo $entity->parse(); ?>
+            <?php echo $entity->parseSummary(); ?>
         </div>
     <?php endforeach; ?>
 </div>
