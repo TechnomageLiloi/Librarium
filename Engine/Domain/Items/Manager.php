@@ -22,8 +22,8 @@ class Manager extends DomainManager
         $name = self::getTableName();
 
         $rows = self::getAdapter()->getArray(sprintf(
-            'select * from %s order by ts desc limit 100;',
-            $name
+            'select * from %s where status=%s order by ts desc limit 100;',
+            $name, Statuses::PUBLISHED
         ));
 
         $collection = new Collection();
