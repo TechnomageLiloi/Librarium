@@ -22,8 +22,8 @@ class Manager extends DomainManager
         $name = self::getTableName();
 
         $rows = self::getAdapter()->getArray(sprintf(
-            'select * from %s where key_item="%s" order by key_atom desc;',
-            $name, $key_item
+            'select * from %s where key_item="%s" and status=%s order by key_atom desc;',
+            $name, $key_item, Statuses::PUBLISHED
         ));
 
         $collection = new Collection();
