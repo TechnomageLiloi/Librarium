@@ -1,0 +1,21 @@
+{
+    "name": "anton-moskalenko/nexus",
+    "keywords": [
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "anton-moskalenko/rune-framework": "dev-main",
+        "anton-moskalenko/rune-config": "dev-main",
+        "anton-moskalenko/rune-api": "dev-main",
+        "anton-moskalenko/rune-tools": "dev-main",
+        "anton-moskalenko/judex": "dev-master",
+        "anton-moskalenko/stylo": "0.3.0",
+        "twbs/bootstrap": "v5.2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liloi\\Nexus\\API\\": "API",
+            "Liloi\\Nexus\\Engine\\": "Engine"
+        }
+    }
+}
