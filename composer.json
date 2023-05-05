@@ -15,8 +15,7 @@
     "autoload": {
         "psr-4": {
             "Liloi\\Nexus\\API\\": "API",
-            "Liloi\\Nexus\\Engine\\": "Engine",
-            "Liloi\\Nexus\\Applications\\": "Applications"
+            "Liloi\\Nexus\\Engine\\": "Engine"
         }
     }
 }
